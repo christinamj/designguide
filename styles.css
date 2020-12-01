@@ -1,0 +1,444 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  scroll-padding-top: 75px;
+  overscroll-behavior: none;
+  height: 100%;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 300;
+  font-family: "Raleway", sans-serif;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Playfair Display", serif;
+  font-weight: 300;
+}
+
+h2 {
+  font-size: 30px;
+  padding-bottom: 30px;
+  font-weight: 300;
+}
+
+h3 {
+  padding-bottom: 30px;
+  font-weight: 300;
+  font-size: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-weight: 300;
+  font-family: "Raleway", sans-serif;
+}
+
+li {
+  font-weight: 300;
+  font-family: "Raleway", sans-serif;
+  padding: 10px;
+  padding-left: 0;
+}
+
+i {
+  font-weight: 300;
+  font-family: "Raleway", sans-serif;
+}
+
+.italic {
+  font-style: italic;
+}
+nav {
+  padding-top: 34px;
+  margin-right: 5%;
+}
+
+a:visited {
+  color: black;
+}
+
+.menupoint {
+  position: relative;
+  margin: 20px;
+  padding: 7px;
+  padding-right: 0;
+  padding-left: 0;
+  font-family: "Playfair Display", serif;
+}
+
+.menupoint:hover {
+  border-bottom: 1px solid #c8423c;
+}
+
+header {
+  position: fixed;
+  height: 75px;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  display: flex;
+  justify-content: space-between;
+  transition: 0.3s;
+  background-color: white;
+}
+
+.site-header {
+  position: fixed;
+  height: 50px;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  transition: all 0.3s ease;
+  box-shadow: 0 1px 25px rgba(0, 0, 0, 0.1);
+}
+.hide {
+  top: -70px;
+}
+
+#logo {
+  height: 40px;
+  width: 200px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  position: relative;
+  margin-left: 5.5%;
+  transition: 0.3s;
+  background-image: url("img/responsive-black.svg");
+}
+
+.section-1 {
+  background-color: #26424f;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+  scroll-snap-align: start;
+}
+
+.home-section1 {
+  background-image: url("img/logo-header-new.png");
+  background-position: 35%;
+}
+.entry-content-txt {
+  position: relative;
+  top: 26%;
+  margin-left: 5.3%;
+  max-width: 650px;
+  color: white;
+}
+.entry-content-txt h2 {
+  font-size: 45px;
+  font-weight: 300;
+  padding-bottom: 30px;
+}
+
+/* SECTIONS */
+
+.section-2 {
+  background-color: #f4f4f4;
+  height: calc(100vh - 75px);
+  width: 100vw;
+  scroll-snap-align: start;
+}
+
+.section-3 {
+  background-color: #f4f4f4;
+  height: calc(100vh - 75px);
+  width: 100vw;
+  scroll-snap-align: start;
+}
+.section-4 {
+  background-color: #f4f4f4;
+  height: calc(100vh - 75px);
+  width: 100vw;
+  scroll-snap-align: start;
+}
+
+.section-5 {
+  background-color: #f4f4f4;
+  height: calc(100vh - 75px);
+  width: 100vw;
+  scroll-snap-align: start;
+  display: flex;
+}
+
+.section-6 {
+  background-color: #f4f4f4;
+  height: calc(100vh - 75px);
+  width: 100vw;
+  scroll-snap-align: start;
+}
+
+.entry-hr {
+  margin-top: 30px;
+  max-width: 100px;
+  border: none;
+  height: 1px;
+  background-color: #c8423c;
+}
+
+.sec-2-txt {
+  position: relative;
+  top: 15%;
+  margin-left: 11%;
+  margin-right: 39%;
+}
+.sec-3-txt {
+  position: relative;
+  top: 10%;
+  margin-left: 11%;
+  margin-right: 20%;
+}
+.logo-ex {
+  height: 80px;
+  width: 250px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-bottom: 10px;
+  position: relative;
+  top: 18%;
+}
+
+.logo-1 {
+  background-image: url("img/logo-original.png");
+}
+
+.logo-2 {
+  background-image: url("img/grey-logo.png");
+}
+
+.logo-3 {
+  background-image: url("img/blue-logo.png");
+}
+
+.logo-examples {
+  position: relative;
+  margin-left: 11%;
+}
+
+.sec-2-bottom {
+  display: flex;
+  position: relative;
+  top: 12%;
+}
+
+.download-con {
+  margin-top: 12%;
+  margin-left: 3%;
+}
+
+.download-ikon {
+  margin-top: 5%;
+  margin-left: 6%;
+}
+
+.download-con h3 {
+  padding-bottom: 0;
+}
+
+.download-ikon h3 {
+  padding-bottom: 0;
+}
+
+.download-con .entry-hr {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.download-ikon .entry-hr {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.download-a {
+  display: flex;
+  justify-content: space-between;
+  width: 110%;
+  padding: 8px;
+  padding-left: 0;
+}
+
+.logo-packages {
+  display: flex;
+  flex-direction: column;
+}
+
+.sec-2-con {
+  display: flex;
+  width: 100%;
+}
+
+.sec-2-col1 {
+  width: 55%;
+}
+
+.sec-2-col2 {
+  width: 45%;
+}
+
+.logo-ul {
+  margin-right: 30%;
+}
+
+.logo-ul {
+  margin-left: 3%;
+}
+
+.col2-con {
+  position: relative;
+  top: 34%;
+}
+
+.scroll-p {
+  font-style: italic;
+  padding-top: 7%;
+}
+
+.li-pic {
+  width: 100vw;
+  min-height: 100%;
+  background-size: cover;
+  background-image: url("img/examples.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.ikon-examples {
+  background-image: url(img/ikons.png);
+  height: 300px;
+  width: 315px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-top: 10%;
+  margin-left: 11%;
+}
+
+.thepalet svg {
+  max-height: 255px;
+  width: 95%;
+  position: relative;
+  cursor: pointer;
+}
+
+.the-palet {
+  display: flex;
+  justify-content: start;
+}
+
+.sec-5-txt {
+  position: relative;
+  margin-left: 11%;
+  margin-right: 6%;
+}
+
+.palet-wrapper {
+  position: relative;
+  margin-top: 5%;
+}
+
+.sec-5-col1 {
+  width: 50%;
+  position: relative;
+  top: 7%;
+}
+
+.sec-5-col2 {
+  width: 50%;
+  position: relative;
+  top: 7%;
+  padding-left: 15%;
+}
+
+.ikon-col2-con {
+  position: relative;
+  top: 46%;
+  padding-left: 6%;
+}
+
+.color-bottom {
+  display: flex;
+  width: 100%;
+}
+
+.click-color {
+  width: 26%;
+}
+
+.palet-wrapper {
+  width: 74%;
+}
+
+.click-here {
+  position: relative;
+  top: 15%;
+  left: -33%;
+  color: #c8423c;
+}
+
+.values {
+  position: relative;
+  top: 21%;
+  left: -33%;
+}
+
+/* KEYFRAMES */
+
+/* .click-here {
+  animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%,
+  80% {
+    transform: translate3d(1px, 0, 0);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-3px, 0, 0);
+  }
+
+  40%,
+  60% {
+    transform: translate3d(3px, 0, 0);
+  }
+} */
+
+.prime {
+  height: 74px;
+  width: 77px;
+  border-radius: 50%;
+  background-color: white;
+  margin: 15px;
+}
+
+.prime-colors {
+  display: flex;
+}
